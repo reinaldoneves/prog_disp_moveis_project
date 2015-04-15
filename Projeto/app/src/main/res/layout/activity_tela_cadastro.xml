@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.edu.fatecriopreto.projeto.TelaCadastro"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:background="@drawable/imgbackground">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Novo cliente"
+        android:id="@+id/txtNovoCliente"
+        android:textColor="#000000"
+        android:fontFeatureSettings=""
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nome:"
+        android:id="@+id/txtNome" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtTxtNome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sobrenome:"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtTxtSobrenome"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Telefone:"
+        android:id="@+id/txtTelefone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/edtTxtTelefone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="e-mail:"
+        android:id="@+id/txtEmail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edtTxtEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="senha:"
+        android:id="@+id/txtSenha" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtTxtSenha"
+        android:password="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="confirme a senha:"
+        android:id="@+id/txtConfirmaSenha" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtTxtConfirmaSenha"
+        android:layout_gravity="center_horizontal"
+        android:password="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnCancelar"
+            android:background="@drawable/btncancelar"
+            android:layout_weight="0"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignTop="@+id/btnConfirmar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnConfirmar"
+            android:background="@drawable/btnconfirmar"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginStart="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</LinearLayout>

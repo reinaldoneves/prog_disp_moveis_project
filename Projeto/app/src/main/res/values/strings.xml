@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Projeto</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="splashInicial">splashInicial</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_custom_fonts">CustomFontsActivity</string>
+    <string name="title_activity_tela_cadastro">TelaCadastro</string>
+    <string name="title_activity_fechamento_conta">FechamentoContaActivity</string>
+    <string name="title_activity_tela_info_item">TelaInfoItemActivity</string>
+    <string name="title_activity_cardapio">CardapioActivity</string>
+    <string name="title_activity_itens_pedido">ItensPedidoActivity</string>
+    <string name="title_activity_menu_categoria">MenuCategoriaActivity</string>
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <string name="title_activity_informar_mesa">InformarMesaActivity</string>
+
+</resources>

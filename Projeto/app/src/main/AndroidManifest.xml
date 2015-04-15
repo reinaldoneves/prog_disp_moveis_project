@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.fatecriopreto.projeto" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconepizzaria"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashAppActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".TelaCadastro"
+            android:label="@string/title_activity_tela_cadastro" >
+        </activity>
+        <activity
+            android:name=".TelaSplashActivity"
+            android:label="@string/title_activity_tela_splash" >
+        </activity>
+        <activity
+            android:name=".TelaSplashActivity"
+            android:label="@string/title_activity_tela_splash" >
+        </activity>
+        <activity
+            android:name=".FechamentoContaActivity"
+            android:label="@string/title_activity_fechamento_conta" >
+        </activity>
+        <activity
+            android:name=".TelaInfoItemActivity"
+            android:label="@string/title_activity_tela_info_item" >
+        </activity>
+        <activity
+            android:name=".CardapioActivity"
+            android:label="@string/title_activity_cardapio" >
+        </activity>
+        <activity
+            android:name=".ItensPedidoActivity"
+            android:label="@string/title_activity_itens_pedido" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MenuCategoriaActivity"
+            android:label="@string/title_activity_menu_categoria" >
+        </activity>
+        <activity
+            android:name=".MenuPrincipalActivity"
+            android:label="@string/title_activity_menu_principal" >
+        </activity>
+        <activity
+            android:name=".InformarMesaActivity"
+            android:label="@string/title_activity_informar_mesa" >
+        </activity>
+    </application>
+
+</manifest>

@@ -4,5 +4,5 @@
         android:state_pressed="true" />
     <item android:drawable="@drawable/botaograndefocused"
         android:state_focused="true" />
-    <item android:drawable="@drawable/botaogrande" />
+    <item android:drawable="@drawable/botaogrande"/>
 </selector>

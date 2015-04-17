@@ -39,10 +39,7 @@
             android:name=".TelaSplashActivity"
             android:label="@string/title_activity_tela_splash" >
         </activity>
-        <activity
-            android:name=".TelaSplashActivity"
-            android:label="@string/title_activity_tela_splash" >
-        </activity>
+
         <activity
             android:name=".FechamentoContaActivity"
             android:label="@string/title_activity_fechamento_conta" >

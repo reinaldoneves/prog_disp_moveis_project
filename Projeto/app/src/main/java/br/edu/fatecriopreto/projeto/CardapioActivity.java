@@ -1,4 +1,4 @@
-ackage br.edu.fatecriopreto.projeto;
+package br.edu.fatecriopreto.projeto;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;

@@ -13,86 +13,81 @@
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_marginBottom="8dp" android:visibility="gone" />
 
-    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px">
 
-            <com.google.android.gms.common.SignInButton android:id="@+id/plus_sign_in_button"
-                android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp" />
+        <com.google.android.gms.common.SignInButton android:id="@+id/plus_sign_in_button"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:layout_marginBottom="32dp" />
 
-            <ImageView
-                android:layout_width="152dp"
-                android:layout_height="225dp"
-                android:id="@+id/imageView"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/iconepizzaria" />
+        <ImageView
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgLogotipo"
+            android:src="@drawable/iconepizzaria"
+            android:layout_marginTop="-130px"
+            android:layout_marginRight="180px"
+            android:layout_marginLeft="160px" />
 
-            <LinearLayout android:id="@+id/plus_sign_out_buttons"
-                android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:visibility="gone" android:weightSum="2">
+        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:weightSum="1"
+            >
 
-                <Button android:id="@+id/plus_sign_out_button" style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent" android:layout_height="match_parent"
-                    android:layout_weight="1" android:text="@string/plus_sign_out" />
+            <AutoCompleteTextView android:id="@+id/edtEmail" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress" android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"/>
 
-                <Button android:id="@+id/plus_disconnect_button"
-                    style="?android:textAppearanceSmall" android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:layout_weight="1"
-                    android:text="@string/plus_disconnect" />
+            <EditText android:id="@+id/edtSenha" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                android:maxLines="1" android:singleLine="true"
+                android:textAlignment="center"/>
 
-            </LinearLayout>
+            <Button android:id="@+id/email_sign_in_button" style="?android:textAppearanceSmall"
+                android:layout_width="194dp" android:layout_height="29dp"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold"
+                android:layout_marginLeft="150px"
+             />
 
-            <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:orientation="vertical"
-                android:weightSum="1">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="348dp"
+                android:layout_height="148dp"
+                android:id="@+id/linearLayout">
 
-                <AutoCompleteTextView android:id="@+id/edtSenha" android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:hint="@string/prompt_email"
-                    android:inputType="textEmailAddress" android:maxLines="1"
-                    android:singleLine="true" />
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btnlogin"
+                    android:id="@+id/btnLogin"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
 
-                <EditText android:id="@+id/edtPassword" android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:hint="@string/prompt_password"
-                    android:imeActionId="@+id/login"
-                    android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified" android:inputType="textPassword"
-                    android:maxLines="1" android:singleLine="true" />
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/btnCadastrar"
+                    android:background="@drawable/btncadastrar"
+                    android:layout_below="@+id/btnLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5px"/>
 
-                <Button android:id="@+id/email_sign_in_button" style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp" android:text="@string/action_sign_in"
-                    android:textStyle="bold" />
+            </RelativeLayout>
 
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="348dp"
-                    android:layout_height="148dp"
-                    android:id="@+id/linearLayout">
-
-                    <ImageButton
-                        android:layout_width="200dp"
-                        android:layout_height="65dp"
-                        android:background="@drawable/btnlogin"
-                        android:id="@+id/btnLogin"
-                        android:layout_gravity="center_vertical"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
-
-                    <ImageButton
-                        android:layout_width="200dp"
-                        android:layout_height="65dp"
-                        android:id="@+id/btnCadastrarSe"
-                        android:background="@drawable/btncadastrar"
-                        android:layout_below="@+id/btnLogin"
-                        android:layout_centerHorizontal="true" />
-
-                </RelativeLayout>
-
-            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 
 
 </LinearLayout>

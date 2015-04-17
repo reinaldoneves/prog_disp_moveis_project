@@ -15,15 +15,16 @@ public class SplashAppActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_splash_app);
+        //setContentView(R.layout.activity_tela_splash);
+        setContentView(R.layout.activity_login);
 
         //Chamar a tela de login aqui
 
         //Pega a fonte custom
-        Typeface bauhaus93 = Typeface.createFromAsset(getAssets(), "fonts/bauhaus93.ttf");
+        //Typeface bauhaus93 = Typeface.createFromAsset(getAssets(), "fonts/bauhaus93.ttf");
 
         pizzAppTxtView = (TextView) findViewById(R.id.pizzAppTxtView);
-        pizzAppTxtView.setTypeface(bauhaus93);
+       // pizzAppTxtView.setTypeface(bauhaus93);
 
     }
 

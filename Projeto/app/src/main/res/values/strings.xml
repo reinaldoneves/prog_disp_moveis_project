@@ -15,5 +15,6 @@
     <string name="title_activity_menu_categoria">MenuCategoriaActivity</string>
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
     <string name="title_activity_informar_mesa">InformarMesaActivity</string>
+    <string name="title_activity_tela_splash">TESTE</string>
 
 </resources>
